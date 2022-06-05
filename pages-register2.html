@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from rtl-temp.ir/Theme/Zinzer/vertical-rtl/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jun 2019 05:46:51 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>ثبت نام اعضا انجمن</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="ThemeDesign" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin page -->
+
+
+        <div style="padding-top: 30px">
+
+
+            <div class="container" >
+
+
+                    <div>
+                        <div class="card mb-0">
+                            <div class="card-body">
+                                <div class="p-2">
+                                    <div>
+                                        <a href="index-2.html" class="logo logo-admin"><img src="assets/images/logo_dark.png" height="28" alt="logo"></a>
+                                    </div>
+                                </div>
+
+                                <div class="p-2">
+                                    <form class="form-horizontal m-t-20" action="https://themesdesign.in/zinzer_1/vertical-rtl/index.html">
+
+                                        <div class="form-group row">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">نام کامل شرکت *</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" value="" id="example-text-input">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <label>شماره پروانه شرکت</label>
+                                                    <div>
+                                                        <input class="form-control" type="number" value="" id="example-number-input1">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <label>شماره عضویت</label>
+                                                    <div>
+                                                        <input class="form-control" type="number" value="" id="example-number-input2">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <label>شماره امضا شهرسازی</label>
+                                                    <div >
+                                                        <input class="form-control" type="number" value="" id="example-number-input3">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">سمت مسئول شرکت در هیئت مدیره</label>
+                                            <div class="col-sm-8">
+                                                <select class="custom-select">
+                                                    <option selected>این منوی انتخاب را باز کنید</option>
+                                                    <option value="1">رئیس هیئت مدیره</option>
+                                                    <option value="2">نایب رئیس هیئت مدیره</option>
+                                                    <option value="3">عضو هیئت مدیره</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>گرایش خود را انتخاب کنید</label>
+                                            <div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1" data-parsley-multiple="groups"
+                                                           data-parsley-mincheck="2">
+                                                    <label class="custom-control-label" for="customCheck1">ژئو تکنیک</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2" data-parsley-multiple="groups"
+                                                           data-parsley-mincheck="2">
+                                                    <label class="custom-control-label" for="customCheck2">بتن</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3" data-parsley-multiple="groups"
+                                                           data-parsley-mincheck="2">
+                                                    <label class="custom-control-label" for="customCheck3">جوش</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <!-- Loader -->
+                                        <div class="modal bs-example-modal" tabindex="-1" role="dialog">
+                                            <div role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title mt-0">مشخصات مدیر عامل</h5>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group row" style="padding-right: 10px;padding-left: 10px">
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام خانوادگی </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input6">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>کد ملی</label>
+                                                                    <div >
+                                                                        <input class="form-control" type="number" value="" id="example-number-input7">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>شماره تماس</label>
+                                                                    <div>
+                                                                        <input class="form-control" type="number" value="" id="example-number-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                </div><!-- /.modal-content -->
+                                            </div><!-- /.modal-dialog -->
+                                        </div><!-- /.modal -->
+                                        <!-- Loader -->
+                                        <!-- Loader -->
+                                        <div class="modal bs-example-modal" tabindex="-1" role="dialog" style="padding-top: 10px;padding-bottom: 10px">
+                                            <div role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title mt-0">رئیس هیئت مدیره</h5>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group row" style="padding-right: 10px;padding-left: 10px">
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام خانوادگی </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input6">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>کد ملی</label>
+                                                                    <div >
+                                                                        <input class="form-control" type="number" value="" id="example-number-input7">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>شماره تماس</label>
+                                                                    <div>
+                                                                        <input class="form-control" type="number" value="" id="example-number-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /.modal-content -->
+                                            </div><!-- /.modal-dialog -->
+                                        </div><!-- /.modal -->
+                                        <!-- Loader -->
+                                        <!-- Loader -->
+                                        <div class="modal bs-example-modal"  style="padding-bottom: 10px" tabindex="-1" role="dialog">
+                                            <div role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title mt-0">اعضا هیئت مدیره</h5>
+                                                    </div>
+                                                    <div>
+                                                        <div class="form-group row" style="padding-right: 10px;padding-left: 10px">
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>نام خانوادگی </label>
+                                                                    <div>
+                                                                        <input class="form-control" type="text" value="" id="example-text-input6">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>کد ملی</label>
+                                                                    <div >
+                                                                        <input class="form-control" type="number" value="" id="example-number-input7">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+                                                                <div>
+                                                                    <label>شماره تماس</label>
+                                                                    <div>
+                                                                        <input class="form-control" type="number" value="" id="example-number-input">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                </div><!-- /.modal-content -->
+                                            </div><!-- /.modal-dialog -->
+                                        </div><!-- /.modal -->
+                                        <!-- Loader -->
+
+                                        <div class="form-group">
+                                            <label>آدرس آزمایشگاه</label>
+                                            <div>
+                                                <textarea required class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-number-input" class="col-sm-4 col-form-label">شماره تماس آزمایشگاه</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="number" value="" id="example-number-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>آدرس دفتر مرکزی</label>
+                                            <div>
+                                                <textarea required class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-number-input" class="col-sm-4 col-form-label">شماره تماس دفتر مرکزی</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="number" value="" id="example-number-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-number-input" class="col-sm-4 col-form-label">ایمیل</label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" required
+                                                       parsley-type="email" placeholder="وارد کردن ایمیل"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-number-input" class="col-sm-4 col-form-label">شماره شبای شرکت</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="number" value="" id="example-number-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-number-input" class="col-sm-4 col-form-label">شماره کارگاه بیمه</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="number" value="" id="example-number-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-password-input" class="col-sm-4 col-form-label">رمز عبور</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="password" value="123456" id="example-password-input">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="example-password-input" class="col-sm-4 col-form-label">تایید رمز عبور</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" type="password" value="123456" id="example-password-input">
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+                                        <div class="form-group row">
+                                            <div class="col-12">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label font-weight-normal" for="customCheck1">قبول میکنم <a href="#" class="text-primary">شرایط و ضوابط </a></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group text-center row m-t-20">
+                                            <div class="col-12">
+                                                <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">ثبت نام</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group m-t-10 mb-0 row">
+                                            <div class="col-12 m-t-20 text-center">
+                                                <a href="pages-login.html" class="text-muted">در حال حاضر حساب کاربری دارید؟</a>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- end row -->
+            </div>
+        </div>
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/modernizr.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+
+<!-- Mirrored from rtl-temp.ir/Theme/Zinzer/vertical-rtl/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jun 2019 05:46:51 GMT -->
+</html>

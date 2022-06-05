@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from rtl-temp.ir/Theme/Zinzer/vertical-rtl/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jun 2019 05:46:51 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>زینزر - داشبورد ادمین بوت استرپ 4</title>
+    <meta content="Admin Dashboard" name="description" />
+    <meta content="ThemeDesign" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body class="fixed-left">
+
+<!-- Loader -->
+<div id="preloader">
+    <div id="status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Begin page -->
+
+<div style="padding-top: 20px">
+
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 offset-lg-1">
+                <div class="text-left">
+                    <div>
+                        <a href="index-2.html" class="logo logo-admin"><img src="assets/images/logo_dark.png" height="28" alt="logo"></a>
+                    </div>
+                    <h5 class="font-14 text-muted mb-4">ثبت نام در انجمن</h5>
+                    <p class="text-muted mb-4">جهت عضویت در انجمن صنفی ژئوتکنیک و اعتبار سنجی شماره خود را وارد کنید و وارد صفحه ثبت نام شوید .</p>
+
+
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card mb-0">
+                    <div class="card-body">
+                        <div class="p-2">
+                            <h4 class="text-muted float-right font-18 mt-4">اعتبار سنجی</h4>
+                            <div>
+                                <a href="index-2.html" class="logo logo-admin"><img src="assets/images/logo_dark.png" height="28" alt="logo"></a>
+                            </div>
+                        </div>
+
+                        <div class="p-2">
+                            <form class="form-horizontal m-t-20" id="login-form" action="{{ route('doLoginPhone') }}" method="post">
+                                @csrf
+                                <div class="form-group">
+                                    <label>شماره موبایل خود را وارد کنید</label>
+                                    <div>
+                                        <input class="form-control" name="phone" id="phone" required type="text range" min="11"
+                                               max="11" placeholder=""/>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center row m-t-20">
+                                    <div class="col-12">
+                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="submit" name="submit" value="submit">دریافت کد تایید</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="/auth/index" method="get" id="login-form">
+                                @csrf
+                                <div class="form-group">
+                                    <label>کد دریافت شده را وارد کنید</label>
+                                    <div>
+                                        <input class="form-control"  name="code" id="code" required type="text range" min="11"
+                                               max="11" placeholder=""/>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center row m-t-20">
+                                    <div class="col-12">
+                                        <button class="btn btn-primary btn-block waves-effect waves-light" type="submit" name="submit" value="submit">ورود به صفحه نهایی</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+</div>
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/detect.js"></script>
+<script src="assets/js/fastclick.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.blockUI.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+</body>
+
+
+<!-- Mirrored from rtl-temp.ir/Theme/Zinzer/vertical-rtl/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jun 2019 05:46:51 GMT -->
+</html>
