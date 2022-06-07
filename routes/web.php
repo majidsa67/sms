@@ -14,20 +14,13 @@ use App\Http\Controllers\RegisterCompanyController;
 |
 */
 
-
-
-//Route::resource('/register',RegisterCompanyController::class);
-//Route::view('/auth/index','auth/index');
-
-
-
 Route::get('/', function () {
     return view('/auth/index');
 })->name('index');
 Route::get('/login-phone', [AuthController::class, 'loginPhone'])->name('loginPhone');
 Route::get('/register', [\App\Http\Controllers\AuthController::class, 'register'])->name('register');
 Route::post('/register', [\App\Http\Controllers\AuthController::class, 'doRegister'])->name('doRegister');
-Route::post('/login-phone', [\App\Http\Controllers\AuthController::class, 'doLoginPhone'])->name('doLoginPhone');
+Route::post('/login', [\App\Http\Controllers\AuthController::class, 'doLoginPhone'])->name('doLoginPhone');
 Route::get('/verify', [\App\Http\Controllers\AuthController::class, 'verify'])->name('verify');
 Route::post('/doVerify', [\App\Http\Controllers\AuthController::class, 'doVerify'])->name('doVerify');
 Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
