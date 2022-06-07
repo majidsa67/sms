@@ -58,7 +58,9 @@
                 <div class="card mb-0">
                     <div class="card-body">
                         <div class="p-2">
+                            @include('auth.alert')
                             <h4 class="text-muted float-right font-18 mt-4">اعتبار سنجی</h4>
+
                             <div>
                                 <a href="index-2.html" class="logo logo-admin"><img src="assets/images/logo_dark.png" height="28" alt="logo"></a>
                             </div>
@@ -80,7 +82,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <form action="/auth/index" method="get" id="login-form">
+                            <form action="{{ route('doVerify') }}" method="post" id="login-form">
                                 @csrf
                                 <div class="form-group">
                                     <label>کد دریافت شده را وارد کنید</label>
