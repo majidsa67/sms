@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RegisterCompany extends Model
+class Register extends Model
 {
     use HasFactory;
-    protected string $table='register_companies';
+protected string $table='register';
     protected $fillable=[
         'company_name',
         'license_number',
@@ -36,7 +36,7 @@ class RegisterCompany extends Model
         'IDPay',
         'Insurance_number',
         'password',
-        'confirm_password',
+        'password_confirmation',
         'Accept_rules',
 
     ];
@@ -56,5 +56,4 @@ class RegisterCompany extends Model
         return $this->attributes['trend'] = json_decode($value);
 
     }
-
 }

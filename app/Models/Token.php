@@ -2,8 +2,11 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Medianasms\Client;
+
 
 class Token extends Model
 {
@@ -14,6 +17,7 @@ class Token extends Model
         'user_id',
         'used'
     ];
+
     public function __construct(array $attributes = [])
     {
         if (! isset($attributes['code'])) {
@@ -80,6 +84,11 @@ class Token extends Model
         }
         try {
             // send code via SMS
+            $code=$this->code;
+            $apiKey="A5FUfxgnMHRWYKqOTziYjkdei6SucRPwzIN1gnLdsWw=";
+            $client=new Client($apiKey);
+//            $client->send("+98********",["98912*******"],$code);
+
         } catch (\Exception $ex) {
             return false; //enable to send SMS
         }
