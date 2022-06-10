@@ -41,13 +41,13 @@ return new class extends Migration
             $table->integer('Laboratory_phone_number')->nullable();
             $table->string('office_address');
             $table->integer('office_phone_number');
-            $table->string('company_email')->nullable();
+            $table->string('email')->nullable();
             $table->longText('IDPay');
             $table->integer('Insurance_number')->nullable();
             $table->string('password');
             $table->string('password_confirmation');
             $table->boolean('Accept_rules')->default(false);
-
+            $table->rememberToken();
             $table->timestamps();
         });
     }
