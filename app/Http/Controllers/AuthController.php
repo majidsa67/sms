@@ -15,7 +15,7 @@ class AuthController extends Controller
 {
     public function register()
     {
-        return view('auth.register');
+        return view('pages.register');
     }
 
     public function doRegister(CompanyRequest $request)
@@ -40,7 +40,7 @@ class AuthController extends Controller
 
     public function loginPhone()
     {
-        return view('auth.login');
+        return view('pages.login');
     }
 
     public function doLoginPhone(Request $request)
@@ -69,7 +69,7 @@ class AuthController extends Controller
 
     public function verify()
     {
-        return view('auth.login');
+        return view('pages.login');
     }
 
     public function doVerify(Request $request)
