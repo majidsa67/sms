@@ -15,11 +15,9 @@ class BillComponent extends Component
      */
     public $items;
 
-    public function __construct($id)
+    public function __construct()
     {
-        $this->items=Geotechnic::query()
-            ->where( 'id' , '$id')
-            ->get();
+
     }
 
     /**

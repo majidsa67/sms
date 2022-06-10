@@ -12,22 +12,10 @@ class OwnerProfileComponent extends Component
      *
      * @return void
      */
-    public $inputs;
-    public function __construct(Request $request)
-    {
-        $inputs=$request->only(
-            'name',
-            'lastname',
-            'national_id',
-            'address',
 
-        );
-        $result = Contact::create($inputs);
-        if ($result) {
-            return back()->with('success', 'با موفقیت ارسال شد');
-        } else {
-            return back()->with('error');
-        }
+    public function __construct()
+    {
+
 
     }
 

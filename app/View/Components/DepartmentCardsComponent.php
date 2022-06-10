@@ -15,8 +15,7 @@ class DepartmentCardsComponent extends Component
     public $item;
     public function __construct()
     {
-        $this->item=Geotechnic::query()
-            ->get();
+
 
     }
 
