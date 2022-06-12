@@ -347,7 +347,7 @@
                                     <div class="form-group row">
                                         <div class="card-body">
                                             <div class="button-items" style="text-align: center">
-                                                <button type="button" class="btn btn-primary btn-lg btn-block waves-effect waves-light">محاصبه و رفتن به صفحه بعد</button>
+                                                <button type="reset" class="btn btn-primary btn-lg btn-block waves-effect waves-light">محاسبه و رفتن به صفحه بعد</button>
                                                 <button type="button" class="btn btn-secondary btn-sm btn-block waves-effect waves-light">پاک کردن صفحه</button>
                                             </div>
 

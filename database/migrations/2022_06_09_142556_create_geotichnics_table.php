@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('geotichnics', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
             $table->string('map_order_registration_number');
             $table->integer('total_building_area');
             $table->enum('type_of_land',['Fine_grained_lands','Sandy_alluvium','Large_sand_alluvium']);
