@@ -15,7 +15,7 @@ class AuthController extends Controller
 {
     public function register()
     {
-        return view('pages.register');
+        return view('pages.auth.register');
     }
 
     public function doRegister(CompanyRequest $request)
@@ -30,7 +30,7 @@ class AuthController extends Controller
         if (!$request->has('Accept_rules')) {
             return back()->with('error','با خطا مواجه شد. مجدد امتحان کنید.');
         } elseif ($data['Accept_rules'] =true) {
-            Register::create($data);
+            User::create($data);
             return redirect()->route('index')->with('success','با موفقیت ارسال شد.');
         }
 
@@ -40,14 +40,14 @@ class AuthController extends Controller
 
     public function loginPhone()
     {
-        return view('pages.login');
+        return view('pages.auth.login');
     }
 
     public function doLoginPhone(Request $request)
     {
         $data = $request->all();
         $this->validate($request, [
-            'phone' => 'required|exists:users',
+            'phone' => ['required','exists:users'],
         ]);
         $user = User::where('phone', $request->input('phone'))->first();
         $token = Token::create([
@@ -69,7 +69,7 @@ class AuthController extends Controller
 
     public function verify()
     {
-        return view('pages.login');
+        return view('pages.auth.login');
     }
 
     public function doVerify(Request $request)

@@ -26,7 +26,7 @@ class CompanyRequest extends FormRequest
         return [
             'company_name' => ['required'],
             'company_email' => ['email'],
-            'password' => ['required'],
+            'password' => ['required','min:6'],
             'password_confirmation' => ['required','same:password'],
             'trend' => ['required'],
             'office_address' => ['required'],
