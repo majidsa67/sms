@@ -34,11 +34,7 @@ return new class extends Migration
             $table->enum('bedrock',['YES','NO']);
             $table->enum('drilling_surcharge',['YES','NO']);
             $table->enum('number_of_payment',['CASH','ONE_INSTALLMENT','TWO_INSTALLMENT','THREE_INSTALLMENT']);
-            $table->string('documents')->nullable();
-            $table->string('map_command')->nullable();
-            $table->string('autocad_file')->nullable();
-            $table->string('proxy')->nullable();
-            $table->string('national_card')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });
