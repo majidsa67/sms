@@ -1,4 +1,4 @@
-@extends('layouts.masterPages.login')
+@extends('layouts.masterpages.login')
 @section('content')
 
 <!-- Loader -->

@@ -1,4 +1,4 @@
-@extends('layouts.masterPages.register')
+@extends('layouts.masterpages.register')
 @section('content')
 
 <!-- Loader -->
@@ -315,6 +315,13 @@
                                 </div>
                             </div>
                             <div class="form-group row">
+                                <label for="phone" class="col-sm-4 col-form-label">شماره تماس جهت دریافت کد*</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="number" value="{{old('phone')?? ''}}" id="phone"
+                                           name="phone">
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label for="example-number-input" class="col-sm-4 col-form-label">شماره شبای شرکت*</label>
                                 <div class="col-sm-8">
                                     <input class="form-control" type="text" name="IDPay" value="{{old('IDPay')?? ''}}"
@@ -349,10 +356,10 @@
                             <div class="form-group row">
                                 <div class="col-12">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="custom"
+                                        <input type="checkbox" class="custom-control-input" id="Accept_rules"
                                                name="Accept_rules">
-                                        <label class="custom-control-label font-weight-normal" for="custom">قبول میکنم *
-                                            <a href="#" class="text-primary">شرایط و ضوابط </a></label>
+                                        <label class="custom-control-label font-weight-normal" for="Accept_rules">قبول میکنم *
+                                            <a href="/rules" class="text-primary">شرایط و ضوابط </a></label>
                                     </div>
                                 </div>
                             </div>
