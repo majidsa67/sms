@@ -18,82 +18,8 @@
     <div id="wrapper">
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="left side-menu">
-            <button type="button" class="button-menu-mobile button-menu-mobile-topbar open-left waves-effect">
-                <i class="mdi mdi-close"></i>
-            </button>
-
-            <div class="left-side-logo d-block d-lg-none">
-                <div class="text-center">
-
-                    <a href="index-2.html" class="logo"><img src="assets/images/logo_dark.png" height="20" alt="logo"></a>
-                </div>
-            </div>
-
-            <div class="sidebar-inner slimscrollleft">
-
-                <div id="sidebar-menu">
-                    <ul>
-                        <li class="menu-title">اصلی</li>
-
-                        <li>
-                            <a href="index-2.html" class="waves-effect">
-                                <i class="dripicons-home"></i>
-                                <span> داشبورد <span class="badge badge-success badge-pill float-right">3</span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Your-status.html" class="waves-effect">
-                                <i class="dripicons-home"></i>
-                                <span> وضیعیت شما در سیستم <span class="badge badge-success badge-pill float-right"></span></span>
-                            </a>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-briefcase"></i> <span> مدیریت مالی </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="Transactions.html">تراکنش ها</a></li>
-                                <li><a href="Deposit-requests.html">درخواست های واریزی</a></li>
-                                <li><a href="wallet.html">کیف پول</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has_sub">
-                            <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-archive"></i> <span> مدیریت پرونده ها </span> <span class="menu-arrow float-right"><i class="mdi mdi-chevron-right"></i></span></a>
-                            <ul class="list-unstyled">
-                                <li><a href="panel-parvandeh-geotechnic.html">ثبت پرونده ژئو تکنیک</a></li>
-                                <li><a href="panel--Welding.html">ثبت پرونده جوش</a></li>
-                                <li><a href="panel-Concrete.html">ثبت پرونده بتن</a></li>
-                                <li><a href="panel-Registered.html">پرونده های ثبت شده</a></li>
-
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="Polls-and-voting.html" class="waves-effect">
-                                <i class="dripicons-align-center"></i>
-                                <span> نظر سنجی و رای گیری <span class="badge badge-success badge-pill float-right"></span></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Transparency.html" class="waves-effect">
-                                <i class="dripicons-broadcast"></i>
-                                <span> شفافیت <span class="badge badge-success badge-pill float-right"></span></span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="Corrective-cases.html" class="waves-effect">
-                                <i class="dripicons-brush"></i>
-                                <span> موارد اصلاحی <span class="badge badge-success badge-pill float-right"></span></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div> <!-- end sidebarinner -->
-        </div>
-        <!-- Left Sidebar End -->
+    @include('layouts.partials.zinzer.sidebar')
+    <!-- Left Sidebar End -->
 
         <!-- Start right Content here -->
 
@@ -106,7 +32,7 @@
 
                     <div class="topbar-left	d-none d-lg-block">
                         <div class="text-center">
-                            <a href="index-2.html" class="logo"><img src="assets/images/logo.png" height="22" alt="logo"></a>
+                            <a href="index-2.html" class="logo"><img src="/assets/images/logo.png" height="22" alt="logo"></a>
                         </div>
                     </div>
 
@@ -187,7 +113,7 @@
                             <li class="list-inline-item dropdown notification-list nav-user">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="false" aria-expanded="false">
-                                    <img src="assets/images/users/avatar-6.jpg" alt="user" class="rounded-circle">
+                                    <img src="/assets/images/users/avatar-6.jpg" alt="user" class="rounded-circle">
                                     <span class="d-none d-md-inline-block ml-1">آقای میهن وبمستر <i class="mdi mdi-chevron-down"></i> </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
@@ -248,193 +174,193 @@
                     <strong><b>ثبت پرونده ژئو تکنیک</b></strong>
                 </div>
             </div>
-            <div class="row" style="padding-right: 20px;padding-left: 20px">
-                <div class="col-12">
-                    <div class="card m-b-30">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group row">
 
 
-                                        <div class="col-sm-4" style="padding-top: 20px">
-                                            <label for="example-number-input" >شماره ثبت دستور نقشه</label>
-                                            <input class="form-control" type="number" value="" id="example-number-input">
-                                        </div>
-                                        <div class="col-sm-4" style="padding-top: 20px">
-                                            <label for="example-number-input" >متراژ کل بنا</label>
-                                            <input class="form-control" type="number" value="" id="example-number-input">
-                                        </div>
-                                        <div class="col-sm-4"  style="padding-top: 20px">
-                                            <label>نوع زمین</label>
-                                            <select class="form-control">
-                                                <option>زمین های ریزدانه</option>
-                                                <option>آبرفتی ماسه ای</option>
-                                                <option>آبرفتی شن درشت</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-4" style="padding-top: 20px">
-                                            <label for="example-number-input" >تعداد طبقات کل</label>
-                                            <input class="form-control" type="number" value="" id="example-number-input">
-                                        </div>
-                                        <div class="col-sm-4" style="padding-top: 20px">
-                                            <label for="example-number-input" >سطح اشغال طبقه پایین</label>
-                                            <input class="form-control" type="number" value="" id="example-number-input">
-                                        </div>
-                                        <div class="col-sm-4" style="padding-top: 20px">
-                                            <label for="example-number-input" >تعداد طبقات زیر زمین</label>
-                                            <input class="form-control" type="number" value="" id="example-number-input">
-                                        </div>
+            <form action="/pages/geotechnic/{{$item->id}}" method="post" enctype="multipart/form-data" >
+                @csrf
+                @method('put')
+                <div class="row" style="padding-right: 20px;padding-left: 20px">
+                    <div class="col-12">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
 
 
-
-
-
-                                    </div>
-                                </div>
-                            </div> <!-- end row -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-right: 20px;padding-left: 20px">
-                <div class="col-xl-6" >
-                    <div class="card m-b-30">
-                        <div class="card-body">
-
-                            <div class="col-sm-12"  style="padding-top: 20px;border: 1px;border-color: #0b0b0b">
-                                <label class="control-label">تعداد گمانه ماشینی</label>
-                                <input id="demo0" type="text" value="0" name="demo0" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default"/>
-                                <div  style="padding-top: 20px">
-                                    <label for="example-number-input" >عمق گمتنه ماشینی 1</label>
-                                    <input class="form-control" type="number" value="" id="example-number-input">
-                                </div>
-                                <div style="text-align: center;padding-top: 20px">
-                                    <button type="button" class="btn btn-primary waves-effect waves-light"> آپلود درخواست کتبی تعداد گمانه</button>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-6">
-                    <div class="card m-b-30">
-                        <div class="card-body">
-
-
-                            <div class="col-sm-12"  style="padding-top: 20px">
-                                <label class="control-label">تعداد چاهک دستی</label>
-                                <input id="demo1" type="text" value="0" name="demo0" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default"/>
-                                <div  style="padding-top: 20px">
-                                    <label for="example-number-input" >عمق چاهک دستی 1</label>
-                                    <input class="form-control" type="number" value="" id="example-number-input">
-                                </div>
-                                <div style="text-align: center;padding-top: 20px">
-                                    <button type="button" class="btn btn-primary waves-effect waves-light"> آپلود درخواست کتبی تعداد چاهک</button>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-right: 20px;padding-left: 20px">
-                <div class="col-12">
-                    <div class="card m-b-30">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group row">
-
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >سازه نگهبان</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">دارد</option>
-                                                <option value="2">ندارد</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >بارگزاری و برش برجا</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">دارد</option>
-                                                <option value="2">ندارد</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >تست لرزه درون چاهی</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">دارد</option>
-                                                <option value="2">ندارد</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >بستر سنگی</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">بله</option>
-                                                <option value="2">خیر</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >اضافه بهای حفاری</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">دارد</option>
-                                                <option value="2">ندارد</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-3"  style="padding-top: 20px">
-                                            <label >تعداد اقساط پرداخت</label>
-                                            <select class="custom-select">
-                                                <option selected>انتخاب کنید</option>
-                                                <option value="1">به صورت نقدی</option>
-                                                <option value="2">یک قسط</option>
-                                                <option value="3">دو قسط</option>
-                                                <option value="4">سه قسط</option>
-                                            </select>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div> <!-- end row -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" style="padding-right: 20px;padding-left: 20px">
-                <div class="col-12">
-                    <div class="card m-b-30">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group row">
-                                        <div class="card-body">
-                                            <div class="button-items" style="text-align: center">
-                                                <button type="button" class="btn btn-primary btn-lg btn-block waves-effect waves-light">محاصبه و رفتن به صفحه بعد</button>
-                                                <button type="button" class="btn btn-secondary btn-sm btn-block waves-effect waves-light">پاک کردن صفحه</button>
+                                            <div class="col-sm-4" style="padding-top: 20px">
+                                                <label for="example-number-input" >شماره ثبت دستور نقشه</label>
+                                                <input class="form-control" type="number" name="map_order_registration_number" value="{{$item->map_order_registration_number}}" id="example-number-input">
+                                            </div>
+                                            <div class="col-sm-4" style="padding-top: 20px">
+                                                <label for="example-number-input" >متراژ کل بنا</label>
+                                                <input class="form-control" type="number" name="total_building_area" value="{{$item->}}" id="example-number-input">
+                                            </div>
+                                            <div class="col-sm-4"  style="padding-top: 20px">
+                                                <label>نوع زمین</label>
+                                                <select class="form-control" name="type_of_land">
+                                                    <option value="Fine_grained_lands">زمین های ریزدانه</option>
+                                                    <option value="Sandy_alluvium">آبرفتی ماسه ای</option>
+                                                    <option value="Large_sand_alluvium">آبرفتی شن درشت</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4" style="padding-top: 20px">
+                                                <label for="example-number-input" >تعداد طبقات کل</label>
+                                                <input class="form-control" type="number" name="total_number_of_floors" value="{{$item->}}" id="example-number-input">
+                                            </div>
+                                            <div class="col-sm-4" style="padding-top: 20px">
+                                                <label for="example-number-input" >سطح اشغال طبقه پایین</label>
+                                                <input class="form-control" type="number" name="occupancy_level_downstairs" value="{{$item->}}" id="example-number-input">
+                                            </div>
+                                            <div class="col-sm-4" style="padding-top: 20px">
+                                                <label for="example-number-input" >تعداد طبقات زیر زمین</label>
+                                                <input class="form-control" type="number" name="number_of_underground_floors" value="{{$item->}}" id="example-number-input">
                                             </div>
 
+
                                         </div>
                                     </div>
-                                </div>
-                            </div> <!-- end row -->
+                                </div> <!-- end row -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="row" style="padding-right: 20px;padding-left: 20px">
+                    <div class="col-xl-6" >
+                        <div class="card m-b-30">
+                            <div class="card-body">
+
+                                <div class="col-sm-12"  style="padding-top: 20px;border: 1px;border-color: #0b0b0b">
+                                    <label class="control-label">تعداد گمانه ماشینی</label>
+                                    <input id="demo0" type="text" value="{{$item->}}" name="number_of_machine_boreholes" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default"/>
+                                    <div  style="padding-top: 20px">
+                                        <label for="example-number-input" >عمق گمانه ماشینی 1</label>
+                                        <input class="form-control" type="number" name="machine_bore_depth" value="" id="example-number-input">
+                                    </div>
+                                    <div style="text-align: center;padding-top: 20px">
+                                        <button type="file" id="written_request_of_bore_number" name="written_request_of_bore_number" value="{{$item->}}" class="btn btn-primary waves-effect waves-light"> آپلود درخواست کتبی تعداد گمانه</button>
+                                    </div>
+                                </div>
 
 
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-xl-6">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+
+
+                                <div class="col-sm-12"  style="padding-top: 20px">
+                                    <label class="control-label">تعداد چاهک دستی</label>
+                                    <input id="demo1" type="text" value="{{$item->}}" name="number_of_manual_wells" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-prefix="" data-bts-postfix="" data-bts-prefix-extra-class="" data-bts-postfix-extra-class="" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default"/>
+                                    <div  style="padding-top: 20px">
+                                        <label for="example-number-input" >عمق چاهک دستی 1</label>
+                                        <input class="form-control" type="number" name="manual_well_depth" value="" id="example-number-input">
+                                    </div>
+                                    <div style="text-align: center;padding-top: 20px">
+                                        <button type="file" id="written_request_of_well_number" name="written_request_of_well_number" value="{{$item->}}" class="btn btn-primary waves-effect waves-light"> آپلود درخواست کتبی تعداد چاهک</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-right: 20px;padding-left: 20px">
+                    <div class="col-12">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >سازه نگهبان</label>
+                                                <select class="custom-select" name="guard_structure">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="YES">دارد</option>
+                                                    <option value="NO">ندارد</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >بارگزاری و برش برجا</label>
+                                                <select class="custom-select" name="upload_and_cut_in_place">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="YES">دارد</option>
+                                                    <option value="NO">ندارد</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >تست لرزه درون چاهی</label>
+                                                <select class="custom-select" name="in_well_vibration_test">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="YES">دارد</option>
+                                                    <option value="NO">ندارد</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >بستر سنگی</label>
+                                                <select class="custom-select" name="bedrock">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="YES">بله</option>
+                                                    <option value="NO">خیر</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >اضافه بهای حفاری</label>
+                                                <select class="custom-select" name="drilling_surcharge">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="YES">دارد</option>
+                                                    <option value="NO">ندارد</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3"  style="padding-top: 20px">
+                                                <label >تعداد اقساط پرداخت</label>
+                                                <select class="custom-select" name="number_of_payment">
+                                                    <option selected>انتخاب کنید</option>
+                                                    <option value="CASH">به صورت نقدی</option>
+                                                    <option value="ONE_INSTALLMENT">یک قسط</option>
+                                                    <option value="TWO_INSTALLMENT">دو قسط</option>
+                                                    <option value="THREE_INSTALLMENT">سه قسط</option>
+                                                </select>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div> <!-- end row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-right: 20px;padding-left: 20px">
+                    <div class="col-12">
+                        <div class="card m-b-30">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group row">
+                                            <div class="card-body">
+                                                <div class="button-items" style="text-align: center">
+                                                    <button type="reset" class="btn btn-primary btn-lg btn-block waves-effect waves-light">ویرایش اطلاعات</button>
+                                                    <button type="button" class="btn btn-secondary btn-sm btn-block waves-effect waves-light">پاک کردن صفحه</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end row -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
 
             <footer class="footer">

@@ -10,6 +10,7 @@ class Geotechnic extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'map_order_registration_number',
         'total_building_area',
         'type_of_land',
@@ -22,5 +23,10 @@ class Geotechnic extends Model
         'bedrock',
         'drilling_surcharge',
         'number_of_payment',
+        'documents',
+        'map_command',
+        'autocad_file',
+        'proxy',
+        'national_card',
     ];
 }
